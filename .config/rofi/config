@@ -13,7 +13,7 @@ rofi.width:                          100
 ! "Location on screen" Set from: Default
 ! rofi.location:                       0
 ! "Padding" Set from: Default
- rofi.padding:                        400
+ rofi.padding:                        200
 
 set $color_normal_white  #a89984
 set $color_bright_white  #ebdbb2
