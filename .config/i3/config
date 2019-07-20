@@ -221,7 +221,8 @@ bar {
 
   separator_symbol "  |  "
 #  status_command py3status --dbus-notify
-  status_command i3status
+#  status_command i3status
+  status_command i3blocks
   position bottom
   tray_output none
 }
@@ -229,12 +230,14 @@ bar {
 hide_edge_borders both
 
 #exec compton -f
-#exec xrdb ~/.Xresources
+exec xrdb ~/.Xresources &
 
 bindsym $mod+shift+x exec i3lock
 
 exec_always firefox
-exec_always feh --bg-scale ~/bg.png
+exec_always feh --bg-scale ~/bg.png &
 exec compton -f &
+
+# open firefox in workspace 2
 
 assign [class="Firefox-esr"] $ws2
