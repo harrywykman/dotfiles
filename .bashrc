@@ -1,4 +1,4 @@
-export TERM=rxvt-unicod
+export TERM=rxvt-unicode
 
 export PATH="$PATH:/home/archaeon/.local/bin/"
 
