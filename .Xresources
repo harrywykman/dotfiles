@@ -35,7 +35,7 @@
 *color7:  #a89984
 *color15: #ebdbb2
 
-URxvt.font:             xft:inconsolata:pixelsize=10
+URxvt.font:             xft:inconsolata:pixelsize=16
 
 URxvt.termName:         rxvt-256color
 
