@@ -140,6 +140,10 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
+# move to workspace left / right
+bindsym Ctrl+Mod1+Left workspace prev
+bindsym Ctrl+Mod1+Right workspace next
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2

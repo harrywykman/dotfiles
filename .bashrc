@@ -1,3 +1,5 @@
+export TERM=rxvt-unicod
+
 export PATH="$PATH:/home/archaeon/.local/bin/"
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
