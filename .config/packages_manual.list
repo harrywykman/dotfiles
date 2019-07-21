@@ -17,7 +17,6 @@ build-essential
 busybox
 cmake
 cmus
-code
 compton
 console-setup
 coreutils
