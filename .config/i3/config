@@ -192,7 +192,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 for_window [class="^.*"] border pixel 0
-gaps inner 20
+gaps inner 40
 gaps outer 0
 
 # Color scheme (Gruvbox dark)
