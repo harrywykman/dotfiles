@@ -43,8 +43,9 @@ URxvt.scrollBar:	false
 
 URxvt.scrollstyle:      plain
 
-URxvt.borderColor:      #222222
-URxvt.internalBorder:   1
+URxvt.borderColor:      #282828
+URxvt.internalBorder:   20
 
 URxvt.depth: 32
 URxvt.background: rgba:1111/1111/1111/dddd
+URxvt.borderColor: rgba:1111/1111/1111/dddd

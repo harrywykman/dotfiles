@@ -1,0 +1,130 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+
+    colors = true
+    #color_good = "#0088cc"
+    #color_bad = "#333333"
+    #color_degraded = "#1793D1"
+    color_good = "#2ECC71"
+    color_bad = "#E74C3C"
+    color_degraded = "#1793D1"
+    interval = 3
+    # background = "#C678DD"
+}
+
+time {
+    format = " %F %a %H:%M"
+    # on_click 1 = "exec --no-startup-id orage"
+    on_click 1 = "exec --no-startup-id notify-send DATE \"`date`\""
+    on_click 3 = "exec --no-startup-id orage"
+    color = "#D19A66"
+}
+battery 0 {
+    format = "%status %percentage"
+    last_full_capacity = true
+    integer_battery_capacity = true
+    low_threshold = 11
+    threshold_type = time
+    hide_seconds = true
+    status_chr = " "
+    status_bat = " "
+    status_full = " "
+    color = "#61AEEE"
+}
+
+disk "/" {
+    format = " %free"
+    color = "#00ffff"
+}
+
+disk "/home" {
+    format = " %free"
+    color = "#00ff7f"
+}
+
+wireless _first_ {
+    format_up = " %ip"
+    format_down = ""
+}
+
+ethernet ppp0 {
+    # if you use %speed, i3status requires root privileges
+    format_up = "  %ip"
+    format_down = ""
+    color_good = "#00bfff"
+}
+net_rate {
+    # format = "[\?color=#ffa500 {interface}:{down} {up}]"
+    # format = "[\?color=#ff8c00 {interface}:][\?color=#FFb000 {down} {up}]"
+    format = "[\?color=#FFb000 {down} {up}]"
+    precision = 0
+    format_no_connection = ""
+    hide_if_zero = False
+    format_value = "{value:.1f}{unit}"
+    cache_timeout = 2
+}
+sysdata {
+    format = "[\?color=#E06C75 CPU:{cpu_usage}%] [\?color=#C678DD Mem:{mem_used}GB {mem_used_percent}%]"
+    cache_timeout = 10
+    on_click 1 = "exec --no-startup-id i3-sensible-terminal -e htop"
+}
+
+volume master {
+    format = " %volume"
+    format_muted = " %volume"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+    on_click 1 = "exec --no-startup-id xfce4-terminal -e alsamixer"
+    on_click 4 = "exec amixer -D pulse set Master '1%+'"
+    on_click 5 = "exec amixer -D pulse set Master '1%-'"
+    color = "#98C379"
+}
+
+volume_status {
+    command = "pactl"
+    format = " ♫ {percentage}% "
+    # format = " ♪ {percentage}% "
+    on_click 1 = "exec pavucontrol"
+    # on_click 2 = "exec pamixer -t && pkill --signal USR1 py3status"
+    on_click 4 = "exec pamixer -i 5 && pkill --signal USR1 py3status"
+    on_click 5 = "exec pamixer -d 5 && pkill --signal USR1 py3status"
+    color = "#c0c5ce"
+    button_mute = 2
+    thresholds = [
+        (0, "#c0c5ce"),
+        (10, "#c0c5ce"),
+        (20, "#c0c5ce"),
+        (30, "#c0c5ce"),
+        (40, "#c0c5ce"),
+        (50, "#c0c5ce"),
+        (60, "#c0c5ce"),
+        (70, "#c0c5ce"),
+        (80, "#c0c5ce"),
+        (90, "#c0c5ce")
+    ]
+}
+
+backlight {
+        format = " {level}"
+}
+
+
+order += "disk /"
+order += "disk /home"
+order += "wireless _first_"
+order += "ethernet ppp0"
+order += "net_rate"
+order += "sysdata"
+order += "time"
+order += "battery 0"
+order += "backlight"
+order += "volume master"
+order += "volume_status"
