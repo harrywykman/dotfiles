@@ -245,7 +245,7 @@ bar {
 #  status_command i3status
 #  status_command i3blocks
   position bottom
-  tray_output none
+  #tray_output none
   font pango: Font-Awesome, Inconsolata 12
 }
 
@@ -266,6 +266,8 @@ bindsym Ctrl+mod1+b exec feh --bg-scale --randomize ~/.config/backgrounds/
 #exec --no-startup-id i3-msg 'workspace $ws2; exec firefox; $ws1'
 exec --no-startup-id i3-msg 'workspace $ws1; exec rxvt-unicode'
 exec_always feh --bg-max --bg-scale -randomize ~/.config/backgrounds/
+exec_always nm-applet &
+exec_always blueman-applet &
 exec compton -f &
 exec_always nextcloud &
 exec --no-startup-id i3-msg '; exec /usr/bin/firefox'
