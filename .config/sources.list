@@ -1,0 +1,20 @@
+# 
+
+# deb cdrom:[Debian GNU/Linux 9.6.0 _Stretch_ - Official amd64 NETINST 20181110-11:34]/ buster main
+
+# deb cdrom:[Debian GNU/Linux 9.6.0 _Stretch_ - Official amd64 NETINST 20181110-11:34]/ buster main
+
+deb http://ftp.au.debian.org/debian/ buster main contrib non-free
+deb-src http://ftp.au.debian.org/debian/ buster main contrib non-free
+
+deb http://security.debian.org/debian-security buster/updates main contrib non-free
+deb-src http://security.debian.org/debian-security buster/updates main contrib non-free
+
+# buster-updates, previously known as 'volatile'
+deb http://ftp.au.debian.org/debian/ buster-updates main contrib non-free
+deb-src http://ftp.au.debian.org/debian/ buster-updates main contrib non-free
+
+# ansible
+deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
+deb http://download.virtualbox.org/virtualbox/debian bionic contrib
+# deb-src http://download.virtualbox.org/virtualbox/debian bionic contrib
