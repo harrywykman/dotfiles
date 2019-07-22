@@ -51,7 +51,8 @@ disk "/home" {
 
 wireless _first_ {
     format_up = " %ip"
-    format_down = ""
+    format_down = ""
+    #down_color = "#444444"
 }
 
 ethernet ppp0 {
@@ -71,7 +72,7 @@ net_rate {
     cache_timeout = 2
 }
 sysdata {
-    format = "[\?color=#E06C75 CPU:{cpu_usage}%] [\?color=#C678DD Mem:{mem_used}GB {mem_used_percent}%]"
+    format = "[\?color=#E06C75 CPU:{cpu_usage}%] [LOAD1: {load1}] [\?color=#C678DD Mem:{mem_used_percent}%]"
     cache_timeout = 10
     on_click 1 = "exec --no-startup-id i3-sensible-terminal -e htop"
 }
