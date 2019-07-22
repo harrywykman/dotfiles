@@ -13,7 +13,7 @@ rofi.width:                          100
 ! "Location on screen" Set from: Default
 ! rofi.location:                       0
 ! "Padding" Set from: Default
- rofi.padding:                        300
+ rofi.padding:                        500
 
 set $color_normal_white  #a89984
 set $color_bright_white  #ebdbb2
@@ -22,15 +22,16 @@ set $color_bright_gray   #3c3836
 set $color_bright_yellow #d79921
 set $color_normal_black  #282828
 set $color_unused        #ff0000
+set $color_normal_blue   #458588
 
 #define color_normal_gray #222222
 
 ! State:           ´bg´,     ´fg´,     ´bgalt´,  ´hlbg´,   ´hlfg´
-rofi.color-normal: #00282828,  #a89984,  #00282828,  #00282828,   #ebdbb2
+rofi.color-normal: #00282828,  #ebdbb2,  #00282828,  #00282828,   #458588
 rofi.color-urgent: #fdf6e3,  #dc322f,  #eee8d5,  #dc322f,  #fdf6e3
 rofi.color-active: #fdf6e3,  #268bd2,  #eee8d5,  #268bd2,  #fdf6e3
 !                  ´background´, ´border´, ´separator´
-rofi.color-window: #99282828,      #00282828,  #00282828
+rofi.color-window: #95000000,      #00282828,  #00282828
 
 
 
