@@ -65,6 +65,7 @@ evolution-plugin-pstimport
 evolution-plugins
 exfat-fuse
 exfat-utils
+exo-utils
 fakeroot
 ffmpeg
 fig2dev
@@ -327,6 +328,10 @@ libevdev2
 libevent-2.1-6
 libevolution
 libexif12
+libexo-1-0
+libexo-2-0
+libexo-common
+libexo-helpers
 libexpat1
 libexpat1-dev
 libfaad2
@@ -358,6 +363,8 @@ libfuse2
 libgail-3-0
 libgail-common
 libgail18
+libgarcon-1-0
+libgarcon-common
 libgbm1
 libgc1c2
 libgcc-8-dev
@@ -780,6 +787,8 @@ libwebpmux3
 libwebrtc-audio-processing1
 libwmf-bin
 libwmf0.2-7
+libwnck-common
+libwnck22
 libwoff1
 libwpd-0.10-10
 libwpg-0.3-3
@@ -829,6 +838,13 @@ libxdmcp-dev
 libxdmcp6
 libxext-dev
 libxext6
+libxfce4ui-1-0
+libxfce4ui-2-0
+libxfce4ui-common
+libxfce4util-bin
+libxfce4util-common
+libxfce4util7
+libxfconf-0-2
 libxfixes3
 libxfont2
 libxft-dev
@@ -848,6 +864,7 @@ libxpm4
 libxrandr2
 libxrender-dev
 libxrender1
+libxres1
 libxshmfence1
 libxslt1.1
 libxss1
@@ -887,6 +904,7 @@ ntfs-3g
 openssh-server
 openssh-sftp-server
 openssl
+orage-data
 os-prober
 p11-kit
 p11-kit-modules
@@ -1041,6 +1059,8 @@ xauth
 xbitmaps
 xdg-user-dirs
 xdg-utils
+xfce4-panel
+xfconf
 xfonts-100dpi
 xfonts-75dpi
 xfonts-base

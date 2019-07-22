@@ -62,6 +62,7 @@ grub-pc
 gzip
 hdparm
 hostname
+htop
 i3-wm
 i3blocks
 i3lock
@@ -219,6 +220,7 @@ nextcloud-desktop
 nm-tray
 numix-icon-theme
 openssh-client
+orage
 passwd
 pavucontrol
 pciutils
