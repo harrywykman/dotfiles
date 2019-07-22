@@ -114,20 +114,31 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-# mail
-set $ws1 "1: "
+# code
+set $ws1 "1: "
 # browser
 set $ws2 "2: "
-# code
-set $ws3 "3: " 
-set $ws4 "4: " 
-#music
-set $ws5 "5: " 
+# mail
+set $ws3 "3: "
+# social
+set $ws4 "4: "
+# music
+set $ws5 "5: "
+# cloud
 set $ws6 "6: "
+# downloads
 set $ws7 "7: "
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
+workspace $ws1 output LVDS-1
+workspace $ws2 output DP-1
+workspace $ws3 output LVDS-1
+workspace $ws4 output DP-1
+workspace $ws5 output DP-1
+workspace $ws6 output DP-1
+workspace $ws7 output DP-1
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -211,7 +222,7 @@ client.focused            $color_normal_black    $color_normal_gray     $color_b
 client.focused_inactive   $color_normal_black    $color_normal_gray     $color_bright_white    $color_unused   $trans_normal_black
 client.unfocused          $color_normal_black    $color_normal_gray     $color_normal_white    $color_unused   $trans_normal_black
 client.urgent             $color_bright_yellow   $color_bright_yellow   $color_normal_black    $color_unused   $trans_normal_black
-client.placeholder        $color_unused          $color_normal_black    $color_unused          $color_unused   $trans_normal_black
+client.placeholder        $color_normal_black          $color_normal_black    $color_unused          $color_unused   $trans_normal_black
 
 
 # Bar
@@ -224,7 +235,7 @@ bar {
 
     # Type             border                 background              font
     focused_workspace  $color_bright_gray     $color_bright_gray      $color_bright_white
-    active_workspace   $color_unused          $color_unused           $color_unused
+    active_workspace   $color_bright_gray          $color_bright_gray      $color_bright_white
     inactive_workspace $color_normal_gray     $color_normal_gray      $color_normal_white
     urgent_workspace   $color_bright_yellow   $color_bright_yellow    $color_normal_black
   }
@@ -251,11 +262,15 @@ bindsym $mod+n exec code ~/cloud.lllludd.club/Notes/
 
 bindsym Ctrl+mod1+b exec feh --bg-scale --randomize ~/.config/backgrounds/
 
-exec_always firefox &
+#exec_always firefox &
+#exec --no-startup-id i3-msg 'workspace $ws2; exec firefox; $ws1'
+exec --no-startup-id i3-msg 'workspace $ws1; exec rxvt-unicode'
 exec_always feh --bg-max --bg-scale -randomize ~/.config/backgrounds/
 exec compton -f &
 exec_always nextcloud &
 exec --no-startup-id i3-msg '; exec /usr/bin/firefox'
+#exec rxvt-unicode &
+
 
 # open firefox in workspace 2
 

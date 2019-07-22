@@ -20,10 +20,10 @@ general {
 }
 
 time {
-    format = " %F %a %H:%M"
+    format = " %H:%M"
     # on_click 1 = "exec --no-startup-id orage"
-    on_click 1 = "exec --no-startup-id notify-send DATE \"`date`\""
-    on_click 3 = "exec --no-startup-id orage"
+    #on_click 1 = "exec --no-startup-id notify-osd DATE \"`date`\""
+    on_click 1 = "exec --no-startup-id orage"
     color = "#D19A66"
 }
 battery 0 {
@@ -123,8 +123,8 @@ order += "wireless _first_"
 order += "ethernet ppp0"
 #order += "net_rate"
 order += "sysdata"
-order += "time"
 order += "battery 0"
 order += "backlight"
-order += "volume master"
+#order += "volume master"
 order += "volume_status"
+order += "time"
