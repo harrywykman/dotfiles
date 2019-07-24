@@ -1,6 +1,8 @@
 #!/bin/bash
 
-source ./.bashrc
+source ~/.bashrc
+
+sudo apt install debian-keyring debian-archive-keyring
 
 sudo cp ./sources.list /etc/apt/sources.list
 

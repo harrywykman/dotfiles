@@ -21,8 +21,3 @@ deb http://mirror.aarnet.edu.au/debian buster-updates main contrib non-free
 # deb-src http://ftp.au.debian.org/debian/ buster-updates main contrib non-free
 deb-src http://mirror.aarnet.edu.au/debian buster-updates main contrib non-free
 # deb-src http://mirror.waia.asn.au/debian/ buster main contrib non-free
-
-# ansible
-deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
-deb http://download.virtualbox.org/virtualbox/debian bionic contrib
-# deb-src http://download.virtualbox.org/virtualbox/debian bionic contrib
