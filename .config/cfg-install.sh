@@ -12,3 +12,7 @@ else
 fi;
 config checkout
 config config status.showUntrackedFiles no
+
+cd ~/.config
+
+./run.sh
