@@ -96,12 +96,20 @@ gir1.2-atk-1.0
 gir1.2-freedesktop
 gir1.2-gdkpixbuf-2.0
 gir1.2-glib-2.0
+gir1.2-gst-plugins-base-1.0
+gir1.2-gstreamer-1.0
 gir1.2-gtk-3.0
 gir1.2-harfbuzz-0.0
+gir1.2-javascriptcoregtk-4.0
 gir1.2-keybinder-3.0
 gir1.2-notify-0.7
 gir1.2-pango-1.0
+gir1.2-peas-1.0
+gir1.2-rb-3.0
+gir1.2-secret-1
+gir1.2-soup-2.4
 gir1.2-vte-2.91
+gir1.2-webkit2-4.0
 git-man
 glib-networking
 glib-networking-common
@@ -130,6 +138,7 @@ gsfonts
 gstreamer1.0-gl
 gstreamer1.0-plugins-base
 gstreamer1.0-plugins-good
+gstreamer1.0-plugins-ugly
 gstreamer1.0-pulseaudio
 gstreamer1.0-x
 gtk-update-icon-cache
@@ -160,6 +169,7 @@ iw
 javascript-common
 kbd
 klibc-utils
+liba52-0.7.4
 libaa1
 libaacs0
 libaio1
@@ -174,7 +184,6 @@ libaom0
 libappindicator3-1
 libarchive13
 libasan5
-libasound2
 libasound2-data
 libasound2-plugins
 libaspell15
@@ -269,6 +278,7 @@ libconfig9
 libconfuse-common
 libconfuse2
 libcroco3
+libcrypto++6
 libcrystalhd3
 libcue2
 libcups2
@@ -291,6 +301,7 @@ libdiscid0
 libdiscover2
 libdjvulibre-text
 libdjvulibre21
+libdmapsharing-3.0-2
 libdns1104
 libdouble-conversion1
 libdpkg-perl
@@ -359,6 +370,7 @@ libfreetype6-dev
 libfribidi-dev
 libfribidi0
 libfstrm0
+libftgl2
 libfuse2
 libgail-3-0
 libgail-common
@@ -388,6 +400,7 @@ libgl1
 libgl1-mesa-dri
 libglade2-0
 libglapi-mesa
+libglew2.1
 libglib2.0-0
 libglib2.0-bin
 libglib2.0-data
@@ -410,9 +423,12 @@ libgphoto2-6
 libgphoto2-l10n
 libgphoto2-port12
 libgpm2
+libgpod-common
+libgpod4
 libgraphene-1.0-0
 libgraphite2-3
 libgraphite2-dev
+libgrilo-0.3-0
 libgs9
 libgs9-common
 libgsl23
@@ -506,11 +522,13 @@ libkrb5-3
 libkrb5support0
 libksba8
 liblapack3
+liblastfm5-1
 liblcms2-2
 libldap-2.4-2
 libldap-common
 libldb1
 liblilv-0-0
+liblirc-client0
 libllvm7
 liblmdb0
 liblqr-1-0
@@ -543,6 +561,7 @@ libmp3lame0
 libmpc3
 libmpcdec6
 libmpdec2
+libmpeg2-4
 libmpfr6
 libmpg123-0
 libmpx2
@@ -550,6 +569,7 @@ libmtdev1
 libmtp-common
 libmtp-runtime
 libmtp9
+libmygpo-qt5-1
 libmysofa0
 libncurses-dev
 libndp0
@@ -567,6 +587,7 @@ libnl-route-3-200
 libnm0
 libnma0
 libnorm1
+libnotify-bin
 libnpth0
 libnspr4
 libnss-mdns
@@ -577,6 +598,8 @@ liboauth0
 libogg0
 libopenal-data
 libopenal1
+libopencore-amrnb0
+libopencore-amrwb0
 libopenexr23
 libopenjp2-7
 libopenmpt0
@@ -603,6 +626,8 @@ libpcre3-dev
 libpcre32-3
 libpcrecpp0v5
 libpcsclite1
+libpeas-1.0-0
+libpeas-common
 libperl5.28
 libpgm-5.2-0
 libphonenumber7
@@ -622,6 +647,7 @@ libpoppler82
 libportmidi0
 libpostproc55
 libpotrace0
+libprojectm2v5
 libprotobuf-c1
 libprotobuf17
 libproxy1v5
@@ -652,6 +678,7 @@ libqt5dbus5
 libqt5gui5
 libqt5keychain1
 libqt5network5
+libqt5opengl5
 libqt5positioning5
 libqt5printsupport5
 libqt5qml5
@@ -667,11 +694,14 @@ libqt5webenginecore5
 libqt5webenginewidgets5
 libqt5webkit5
 libqt5widgets5
+libqt5x11extras5
 libqt5xml5
 libqtcore4
 libqtdbus4
 libqtgui4
 libquadmath0
+libquvi-0.9-0.9.3
+libquvi-scripts-0.9
 libraw1394-11
 libre2-5
 libreadline5
@@ -679,6 +709,7 @@ libreadline7
 librest-0.7-0
 librevenge-0.0-0
 librhash0
+librhythmbox-core10
 librsvg2-2
 librsvg2-common
 librtmp1
@@ -700,8 +731,10 @@ libsensors-config
 libsensors5
 libsepol1-dev
 libserd-0-0
+libsgutils2-2
 libshine3
 libshout3
+libsidplay1v5
 libsigc++-2.0-0v5
 libsigsegv2
 libsm-dev
@@ -738,6 +771,8 @@ libtie-ixhash-perl
 libtiff5
 libtimedate-perl
 libtorrent-rasterbar9
+libtotem-plparser-common
+libtotem-plparser18
 libtry-tiny-perl
 libtsan0
 libturbojpeg0
@@ -885,9 +920,15 @@ linux-base
 linux-image-4.19.0-5-amd64
 linux-libc-dev
 lsb-release
+lua-bitop
+lua-expat
+lua-json
+lua-lpeg
+lua-socket
 lxde-settings-daemon
 m4
 manpages-dev
+media-player-info
 mesa-va-drivers
 mesa-vdpau-drivers
 mime-support
@@ -922,6 +963,7 @@ poppler-data
 powermgmt-base
 powertop
 ppp
+projectm-data
 psmisc
 publicsuffix
 pulseaudio-utils
@@ -998,6 +1040,8 @@ python3-idna
 python3-keyring
 python3-keyrings.alt
 python3-lib2to3
+python3-mako
+python3-markupsafe
 python3-minimal
 python3-pkg-resources
 python3-psutil
@@ -1023,6 +1067,8 @@ qtchooser
 qtcore4-l10n
 qttranslations5-l10n
 rfkill
+rhythmbox-data
+rhythmbox-plugins
 rtkit
 rtmpdump
 samba-libs

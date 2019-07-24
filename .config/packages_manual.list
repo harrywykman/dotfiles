@@ -16,6 +16,7 @@ bsdmainutils
 bsdutils
 build-essential
 busybox
+clementine
 cmake
 cmus
 compton
@@ -89,6 +90,7 @@ libapparmor1
 libapt-inst2.0
 libapt-pkg5.0
 libargon2-1
+libasound2
 libattr1
 libaudit-common
 libaudit1
@@ -241,6 +243,7 @@ python3-reportbug
 ranger
 readline-common
 reportbug
+rhythmbox
 rofi
 rsyslog
 rxvt-unicode
@@ -266,6 +269,7 @@ traceroute
 tzdata
 ucf
 udev
+undistract-me
 unzip
 usbutils
 util-linux
