@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get update && sudo apt-get install build-essential libfftw3-dev libncursesw5-dev cmake
+sudo apt-get update && sudo apt-get -y install build-essential libfftw3-dev libncursesw5-dev cmake
 
 mkdir -p ~/tmp
 

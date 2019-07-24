@@ -12,7 +12,11 @@ sudo apt install xorg lightdm i3-wm i3status suckless-tools
 
 ./install_light.sh
 
+cd ~/.config/
+
 ./install_i3_gaps.sh
+
+cd ~/.config/
 
 ./install_packages.sh
 
