@@ -6,7 +6,7 @@ sudo apt install debian-keyring debian-archive-keyring
 
 sudo cp ./sources.list /etc/apt/sources.list
 
-sudo apt upgrade && sudo apt full-upgrade
+sudo apt update && sudo apt full-upgrade -y
 
 sudo apt install xorg lightdm i3-wm i3status suckless-tools
 
