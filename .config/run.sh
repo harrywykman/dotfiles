@@ -22,3 +22,4 @@ cd ~/.config/
 
 ./install_vis.sh
 
+./install_firefox.sh
