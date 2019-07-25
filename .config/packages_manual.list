@@ -16,7 +16,6 @@ bsdmainutils
 bsdutils
 build-essential
 busybox
-clementine
 cmake
 cmus
 compton
