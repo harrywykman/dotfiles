@@ -1,3 +1,5 @@
+export PATH="$PATH:/home/archaeon/Downloads/platform-tools"
+
 export TERMINAL=rxvt-unicode
 
 export PATH="$PATH:/home/archaeon/.local/bin/"
@@ -115,3 +117,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+export CTF_ROOT="/home/archaeon/Documents/ctfs/picoCTF2019/sec-tools" # DO NOT EDIT This is added by sec-tools
+export PATH="/home/archaeon/Documents/ctfs/picoCTF2019/sec-tools/bin:/home/archaeon/Documents/ctfs/picoCTF2019/sec-tools:$PATH" # DO NOT EDIT This is added by sec-tools
