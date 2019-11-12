@@ -13,6 +13,6 @@ fi;
 config checkout
 config config status.showUntrackedFiles no
 
-#cd ~/.config
+cd ~/.config
 
-#./run.sh
+./run.sh
