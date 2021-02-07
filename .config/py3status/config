@@ -121,7 +121,7 @@ backlight {
 order += "disk /"
 order += "disk /home"
 order += "wireless _first_"
-order += "ethernet ppp0"
+#order += "ethernet ppp0"
 #order += "net_rate"
 order += "sysdata"
 order += "battery 0"

@@ -1,6 +1,6 @@
 export PATH="$PATH:/home/archaeon/Downloads/platform-tools"
 
-export TERMINAL=rxvt-unicode
+#export TERMINAL=rxvt-unicode
 
 export PATH="$PATH:/home/archaeon/.local/bin/"
 
@@ -119,7 +119,7 @@ if ! shopt -oq posix; then
 fi
 export CTF_ROOT="/home/archaeon/Documents/ctfs/picoCTF2019/sec-tools" # DO NOT EDIT This is added by sec-tools
 export PATH="/home/archaeon/Documents/ctfs/picoCTF2019/sec-tools/bin:/home/archaeon/Documents/ctfs/picoCTF2019/sec-tools:$PATH" # DO NOT EDIT This is added by sec-tools
-source /home/archaeon/.local/bin//activate.sh
+#source /home/archaeon/.local/bin//activate.sh
 
 PATH="/home/archaeon/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/archaeon/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
