@@ -2,4 +2,4 @@
 	name = archaeon
 	email = archaeon@riseup.net
 [core]
-	editor = /usr/bin/atom
+	editor = nano

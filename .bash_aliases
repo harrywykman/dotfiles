@@ -1,3 +1,5 @@
+alias tootle="flatpak run com.github.bleakgrey.tootle"
+alias scuttlebutt="/usr/bin/ssb-patchwork-3.16.2-x86_64.AppImage"
 alias dice="xkcdpass --delimiter='-'"
 alias wa="watson"
 alias config='/usr/bin/git --git-dir=/home/archaeon/.cfg/ --work-tree=/home/archaeon'

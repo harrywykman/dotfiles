@@ -273,13 +273,16 @@ exec_always nextcloud &
 exec --no-startup-id i3-msg 'workspace $ws2; exec /usr/bin/firefox'
 exec --no-startup-id i3-msg 'workspace $ws3; exec /usr/bin/evolution'
 exec --no-startup-id i3-msg 'workspace $ws4; exec /opt/Signal/signal-desktop'
+exec --no-startup-id i3-msg 'workspace $ws4; exec flatpak run com.github.bleakgrey.tootle'
 exec --no-startup-id i3-msg 'workspace $ws4; exec /usr/bin/gajim'
 #exec rxvt-unicode &
-exec xrandr --output LVDS-1 --primary
+#exec xrandr --output LVDS-1 --primary
+exec xrandr --output LVDS-1 --off --output DP-3 --off --output DP-2 --off --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-1 --off
 exec --no-startup-id i3-msg 'workspace $ws1; exec rxvt-unicode'
 exec --no-startup-id xautolock -time 10 -locker 'i3lock -d -c 000000'
 
 exec sshfs -o idmap=user library:/home/archaeon/music /home/archaeon/music
+exec sshfs -o idmap=user fortress:/media/share/ /home/archaeon/share
 
 # open firefox in workspace 2
 
